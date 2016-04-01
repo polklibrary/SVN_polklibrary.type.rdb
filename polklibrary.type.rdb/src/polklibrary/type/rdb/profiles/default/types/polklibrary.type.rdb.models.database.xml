@@ -12,9 +12,9 @@
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types" />
  <property name="allow_discussion">False</property>
- <property name="default_view">rdb_view</property>
+ <property name="default_view">rdb_proxy</property>
  <property name="view_methods">
-  <element value="rdb_view"/>
+  <element value="rdb_proxy"/>
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>

@@ -66,7 +66,6 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
 
 	}
     
-    
 	editor.addCommand("mceAZPicker", showDialog);
 
 	editor.addButton('AZPicker', {

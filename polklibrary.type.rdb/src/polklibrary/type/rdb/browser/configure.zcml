@@ -7,7 +7,14 @@
 
     <browser:page
         for="polklibrary.type.rdb.models.database.IDatabase"
-        name="rdb_view"
+        name="rdb_proxy"
+        class=".database.DatabaseProxy"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="polklibrary.type.rdb.models.database.IDatabase"
+        name="dbinfo"
         class=".database.DatabaseView"
         permission="zope2.View"
         />

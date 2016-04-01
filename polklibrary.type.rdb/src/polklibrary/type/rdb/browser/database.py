@@ -14,3 +14,10 @@ class DatabaseView(BrowserView):
     def portal(self):
         return api.portal.get()
         
+        
+class DatabaseProxy(BrowserView):
+
+    def __call__(self):
+        return self.request.response.redirect(self.context.getRemoteUrl, status=301)
+
+        
