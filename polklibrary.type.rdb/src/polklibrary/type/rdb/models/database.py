@@ -6,9 +6,15 @@ from zope import schema
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
 resource_types = SimpleVocabulary([
+    SimpleTerm(value=u'Art', title=u'Art'),
     SimpleTerm(value=u'Articles', title=u'Articles'),
     SimpleTerm(value=u'Books', title=u'Books'),
+    SimpleTerm(value=u'DVD/VHS', title=u'DVD/VHS'),
+    SimpleTerm(value=u'eBooks', title=u'eBooks'),
+    SimpleTerm(value=u'Images', title=u'Images'),
+    SimpleTerm(value=u'Graphic Novels', title=u'Graphic Novels'),
     SimpleTerm(value=u'Journals', title=u'Journals'),
+    SimpleTerm(value=u'Magazines', title=u'Magazines'),
     SimpleTerm(value=u'Newspaper Resources', title=u'Newspaper Resources'),
     SimpleTerm(value=u'Primary Source Resources', title=u'Primary Source Resources'),
     SimpleTerm(value=u'Reference and Background Resources', title=u'Reference and Background Resources'),
