@@ -15,9 +15,11 @@ resource_types = SimpleVocabulary([
     SimpleTerm(value=u'Graphic Novels', title=u'Graphic Novels'),
     SimpleTerm(value=u'Journals', title=u'Journals'),
     SimpleTerm(value=u'Magazines', title=u'Magazines'),
-    SimpleTerm(value=u'Newspaper Resources', title=u'Newspaper Resources'),
-    SimpleTerm(value=u'Primary Source Resources', title=u'Primary Source Resources'),
-    SimpleTerm(value=u'Reference and Background Resources', title=u'Reference and Background Resources'),
+    SimpleTerm(value=u'Music', title=u'Music'),
+    SimpleTerm(value=u'Newspaper Resources', title=u'Newspapers'),
+    SimpleTerm(value=u'Primary Source Resources', title=u'Primary Sources'),
+    SimpleTerm(value=u'Reference and Background Resources', title=u'Reference and Background'),
+    SimpleTerm(value=u'Sheet Music', title=u'Sheet Music'),
     SimpleTerm(value=u'Streaming Video', title=u'Streaming Video'),
 ])
 
