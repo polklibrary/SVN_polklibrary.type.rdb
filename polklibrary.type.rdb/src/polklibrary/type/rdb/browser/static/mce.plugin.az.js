@@ -52,9 +52,9 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
 				editor.focus();
 
 				editor.undoManager.transact(function() {
-                    var content = '<a class="az-link" href="' + url + '">' + title + '</a>';
+                    var content = '<p><a href="' + url + '">' + title + '</a><p>';
                     if (e.data.use_description)
-                        content += '<p class="az-description">' + description + '</p>';
+                        content += '<p>' + description + '</p>';
                     
 					editor.insertContent(content);
 				});
