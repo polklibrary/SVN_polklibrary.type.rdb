@@ -4,7 +4,6 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
     var databases_hash = {}; // Store for fast look up of all information
     
     $.get($('body').attr('data-portal-url') + '/getResearchDatabase', function(data){
-        json = $.parseJSON(data);
         for (var i in json) {
             databases.push({
                 'text' : json[i].Title,
