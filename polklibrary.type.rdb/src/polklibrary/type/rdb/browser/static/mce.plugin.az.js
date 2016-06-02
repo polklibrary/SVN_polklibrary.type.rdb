@@ -53,7 +53,7 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
 				editor.focus();
 
 				editor.undoManager.transact(function() {
-                    var content = '<p><a href="' + url + '" data-id="' + id + '">' + title + '</a><p>';
+                    var content = '<p><a class="pat-db-info" href="' + url + '" data-id="' + id + '">' + title + '</a><p>';
                     if (e.data.use_description)
                         content += '<p>' + description + '</p>';
                     
