@@ -4,12 +4,12 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
     var databases_hash = {}; // Store for fast look up of all information
     
     $.get($('body').attr('data-portal-url') + '/getResearchDatabase', function(data){
-        for (var i in json) {
+        for (var i in data) {
             databases.push({
-                'text' : json[i].Title,
+                'text' : data[i].Title,
                 'value' : i,
             });
-            databases_hash = json;
+            databases_hash[data[i].id] = data[i];
         }
     });
 
