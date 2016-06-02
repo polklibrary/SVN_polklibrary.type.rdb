@@ -2,15 +2,18 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
 
     var databases = []; // Used for menu dropdown only
     var databases_hash = {}; // Store for fast look up of all information
-    
+    var databases_full = [];
+
     $.get($('body').attr('data-portal-url') + '/getResearchDatabase', function(data){
         for (var i in data) {
             databases.push({
                 'text' : data[i].Title,
                 'value' : i,
             });
-            databases_hash[data[i].id] = data[i];
+            databases_full.push(data[i]);
         }
+        
+        consol.
     });
 
     function compare(a,b) {
@@ -44,11 +47,11 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
             
 			onSubmit: function(e) {
 
-                var title = databases_hash[e.data.database].Title;
-                var description = databases_hash[e.data.database].Description;
-                var url = databases_hash[e.data.database].getRemoteUrl;
-                var id = databases_hash[e.data.database].getId;
-            
+                var title = databases_full[e.data.database].Title;
+                var description = databases_full[e.data.database].Description;
+                var url = databases_full[e.data.database].getRemoteUrl;
+                var id = databases_full[e.data.database].getId;
+
 				editor.focus();
 
 				editor.undoManager.transact(function() {
