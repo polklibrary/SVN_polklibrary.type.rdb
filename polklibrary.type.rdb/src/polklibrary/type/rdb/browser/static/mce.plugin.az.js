@@ -13,7 +13,6 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
             databases_full.push(data[i]);
         }
         
-        consol.
     });
 
     function compare(a,b) {
