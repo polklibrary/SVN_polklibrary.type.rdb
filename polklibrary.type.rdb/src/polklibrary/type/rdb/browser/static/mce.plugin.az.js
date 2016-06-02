@@ -48,11 +48,12 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
                 var title = databases_hash[e.data.database].Title;
                 var description = databases_hash[e.data.database].Description;
                 var url = databases_hash[e.data.database].getRemoteUrl;
+                var id = databases_hash[e.data.database].getId;
             
 				editor.focus();
 
 				editor.undoManager.transact(function() {
-                    var content = '<p><a href="' + url + '">' + title + '</a><p>';
+                    var content = '<p><a href="' + url + '" data-id="' + id + '">' + title + '</a><p>';
                     if (e.data.use_description)
                         content += '<p>' + description + '</p>';
                     
