@@ -65,10 +65,9 @@ class IDatabase(model.Schema):
             default=u"",
         )
         
-    location = schema.TextLine(
+    reference = schema.TextLine(
             title=u"Tutorial Link",
             required=False,
         )
-
         
         
