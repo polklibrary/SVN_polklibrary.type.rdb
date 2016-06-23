@@ -11,6 +11,7 @@ tinymce.PluginManager.add('KeyLegend', function(editor) {
                 
                     var base = $('body', window.parent.document).data('portal-url');
                     var content = '<p>' +
+                        '<div>Good for Disciplines</div>' +
                         '<ul id="subject-legend">' +
                             '<li data-discipline="0">' +
                                 '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/blue.jpg" alt="1" />' +
