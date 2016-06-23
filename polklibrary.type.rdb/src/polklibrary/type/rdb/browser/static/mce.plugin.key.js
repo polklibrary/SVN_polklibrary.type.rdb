@@ -13,35 +13,35 @@ tinymce.PluginManager.add('KeyLegend', function(editor) {
                     var content = '<p>' +
                         '<ul id="subject-legend">' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/blue.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/blue.jpg" alt="1" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/red.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/red.jpg" alt="2" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/orange.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/orange.jpg" alt="3" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/green.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/green.jpg" alt="4" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/purple.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/purple.jpg" alt="5" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/teal.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/teal.jpg" alt="6" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/yellow.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/yellow.jpg" alt="7" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                             '<li data-discipline="0">' +
-                                '<img src="++resource++polklibrary.type.rdb/pink.jpg" alt="1" />' +
+                                '<img class="subject-key-icon" src="++resource++polklibrary.type.rdb/pink.jpg" alt="8" />' +
                                 '<div>Discipline</div>' +
                             '</li>' +
                         '</ul>'+
