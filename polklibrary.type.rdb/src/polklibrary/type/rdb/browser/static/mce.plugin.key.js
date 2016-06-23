@@ -13,35 +13,35 @@ tinymce.PluginManager.add('KeyLegend', function(editor) {
                     var content = '<ul id="subject-legend">' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/blue.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/red.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/orange.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/green.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/purple.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/teal.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/yellow.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                         '<li data-discipline="0">' +
                             '<img src="/++resource++polklibrary.type.rdb/pink.jpg" alt="1" />' +
-                            '<span>Discipline</span>' +
+                            '<div>Discipline</div>' +
                         '</li>' +
                     '</ul>'
                 
