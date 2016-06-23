@@ -56,7 +56,7 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
 				editor.undoManager.transact(function() {
                     var content = '<p><a class="pat-db-info" href="' + url + '" data-id="' + id + '">' + title + '</a><p>';
                     if (e.data.use_description)
-                        content += '<p>' + description + '</p>';
+                        content += '<p class="pat-db-info-desc" data-desc-id="' + id + '">' + description + '</p>';
                     
 					editor.insertContent(content);
 				});

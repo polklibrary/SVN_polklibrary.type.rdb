@@ -1,9 +1,29 @@
 from plone import api
 from plone.app.textfield import RichText
 from plone.namedfile.field import NamedBlobImage
+from plone.registry.interfaces import IRegistry
 from plone.supermodel import model
 from zope import schema
+from zope.component import queryUtility
+from zope.component import getUtility
+from zope.interface import directlyProvides
+from zope.schema.interfaces import IContextSourceBinder
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+
+def discipline_list(context):
+    voc = []
+    try:
+        registry = queryUtility(IRegistry)
+        if registry:
+            record = registry.get('polklibrary.type.subjects.disciplines', ())
+            for v in record:
+                voc.append(SimpleTerm(value=v, title=v))
+            return SimpleVocabulary(voc)
+        return SimpleVocabulary([])
+    except Exception as e:
+        return SimpleVocabulary([])
+directlyProvides(discipline_list, IContextSourceBinder)
+
 
 resource_types = SimpleVocabulary([
     SimpleTerm(value=u'Art', title=u'Art'),
@@ -70,4 +90,8 @@ class IDatabase(model.Schema):
             required=False,
         )
         
-        
+    disciplines = schema.List(
+            title=u"Disciplines that use by this database",
+            required=False,
+            value_type=schema.Choice(source=discipline_list),
+        )
