@@ -105,7 +105,6 @@ class IDatabase(model.Schema):
             title=u"Accessible",
             source=state_types,
             default=u"On",
-            missing_value=u"On",
             required=False,
         )
         
