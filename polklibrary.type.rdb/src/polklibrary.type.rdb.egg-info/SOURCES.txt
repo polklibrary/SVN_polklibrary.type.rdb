@@ -29,7 +29,17 @@ src/polklibrary/type/rdb/browser/database.py
 src/polklibrary/type/rdb/browser/overrides/.gitkeep
 src/polklibrary/type/rdb/browser/static/.gitkeep
 src/polklibrary/type/rdb/browser/static/a-z.png
+src/polklibrary/type/rdb/browser/static/blue.jpg
+src/polklibrary/type/rdb/browser/static/green.jpg
+src/polklibrary/type/rdb/browser/static/key-icon.png
 src/polklibrary/type/rdb/browser/static/mce.plugin.az.js
+src/polklibrary/type/rdb/browser/static/mce.plugin.key.js
+src/polklibrary/type/rdb/browser/static/orange.jpg
+src/polklibrary/type/rdb/browser/static/pink.jpg
+src/polklibrary/type/rdb/browser/static/purple.jpg
+src/polklibrary/type/rdb/browser/static/red.jpg
+src/polklibrary/type/rdb/browser/static/teal.jpg
+src/polklibrary/type/rdb/browser/static/yellow.jpg
 src/polklibrary/type/rdb/locales/polklibrary.type.rdb.pot
 src/polklibrary/type/rdb/locales/update.sh
 src/polklibrary/type/rdb/models/__init__.py

@@ -48,6 +48,11 @@ message_types = SimpleVocabulary([
     SimpleTerm(value=u'Trial', title=u'Trial'),
 ])
 
+state_types = SimpleVocabulary([
+    SimpleTerm(value=u'On', title=u'On'),
+    SimpleTerm(value=u'Off', title=u'Off'),
+])
+
 
 class IDatabase(model.Schema):
 
@@ -95,3 +100,14 @@ class IDatabase(model.Schema):
             required=False,
             value_type=schema.Choice(source=discipline_list),
         )
+        
+    state = schema.Choice(
+            title=u"Accessible",
+            source=state_types,
+            default=u"On",
+            missing_value=u"On",
+            required=False,
+        )
+        
+        
+        
