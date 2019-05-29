@@ -101,10 +101,9 @@ class IDatabase(model.Schema):
             value_type=schema.Choice(source=discipline_list),
         )
         
-    state = schema.Choice(
-            title=u"Accessible",
-            source=state_types,
-            default=u"On",
+    exclude_from_nav = schema.Bool(
+            title=u"Exclude from A-Z drop down?",
+            default=False,
             required=False,
         )
         
