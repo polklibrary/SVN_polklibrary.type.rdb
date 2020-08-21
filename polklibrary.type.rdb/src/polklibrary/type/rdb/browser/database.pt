@@ -68,7 +68,7 @@
                     <dt>
                         Resources available through this resource
                     </dt>
-                    <dd>
+                    <dd class="rdb-resources">
                         <ul>
                             <li tal:repeat="resource context/resources">${resource}</li>
                         </ul>
@@ -77,8 +77,15 @@
                     <dt>
                         Resource link for embedding
                     </dt>
-                    <dd>
+                    <dd  class="rdb-embed">
                         <input type="text" readonly="readonly" value="${context/getRemoteUrl}" />
+                    </dd>
+                    
+                    <dt>
+                        Funded by
+                    </dt>
+                    <dd class="rdb-funded" tal:content="structure context/funded|nothing">
+                        
                     </dd>
                 </dl>
                 

@@ -77,6 +77,12 @@ class IDatabase(model.Schema):
             value_type=schema.Choice(source=resource_types),
         )
         
+    funded = schema.Text(
+            title=u"Funded by",
+            required=False,
+            default=u"",
+        )
+        
     activated = schema.Choice(
             title=u"Turn on message",
             source=message_types,
