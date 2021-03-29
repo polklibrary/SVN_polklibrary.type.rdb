@@ -3,5 +3,8 @@
 	
 	<column value="resources" />
 	<column value="activated" />
+    <column value="reference"/>
+    <column value="disciplines"/>
+        
 	
 </object>
