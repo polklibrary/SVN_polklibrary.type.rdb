@@ -48,7 +48,7 @@ tinymce.PluginManager.add('AZPicker', function(editor) {
 
                 var title = databases_full[e.data.database].Title;
                 var description = databases_full[e.data.database].Description;
-                var url = databases_full[e.data.database].getURL;
+                var url = databases_full[e.data.database].getRemoteUrl;
                 var id = databases_full[e.data.database].getId;
 
 				editor.focus();
